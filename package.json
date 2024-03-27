@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "type": "module",
+  "name": "prism-ton",
+  "description": "🔺 Maintained set of TON blockchain programming language definitions for Prism.js",
+  "keywords": [
+    "ton",
+    "the-open-network",
+    "prismjs",
+    "tlb",
+    "fift",
+    "func",
+    "tact"
+  ],
+  "scripts": {
+    "deps": "yarn install --frozen-lockfile",
+    "prism:init": "git submodule update --init --recursive && cd .github/submodule-prism && npm ci",
+    "prism:links": "yarn deps && node .github/create-links.js",
+    "prism:build": "cd .github/submodule-prism && npm run build",
+    "test": "yarn test:tact && yarn test:func && yarn test:fift && yarn test:tlb",
+    "test:tact": "cd .github/submodule-prism && npm run test:languages -- --language tact",
+    "test:func": "cd .github/submodule-prism && npm run test:languages -- --language func",
+    "test:fift": "cd .github/submodule-prism && npm run test:languages -- --language fift",
+    "test:tlb": "cd .github/submodule-prism && npm run test:languages -- --language tlb",
+    "regex-coverage": "cd .github/submodule-prism && npm run regex-coverage"
+  },
+  "devDependencies": {
+    "symlink-dir": "^5.2.1"
+  }
+}
