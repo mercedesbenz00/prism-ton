@@ -19,12 +19,17 @@
     "prism:build": "cd .github/submodule-prism && npm run build",
     "test": "yarn test:tact && yarn test:func && yarn test:fift && yarn test:tlb",
     "test:tact": "cd .github/submodule-prism && npm run test:languages -- --language tact",
+    "test:tact:accept": "cd .github/submodule-prism && npm run test:languages -- --language tact --accept",
     "test:func": "cd .github/submodule-prism && npm run test:languages -- --language func",
+    "test:func:accept": "cd .github/submodule-prism && npm run test:languages -- --language func --accept",
     "test:fift": "cd .github/submodule-prism && npm run test:languages -- --language fift",
+    "test:fift:accept": "cd .github/submodule-prism && npm run test:languages -- --language fift --accept",
     "test:tlb": "cd .github/submodule-prism && npm run test:languages -- --language tlb",
+    "test:tlb:accept": "cd .github/submodule-prism && npm run test:languages -- --language tlb --accept",
     "regex-coverage": "cd .github/submodule-prism && npm run regex-coverage"
   },
   "devDependencies": {
     "symlink-dir": "^5.2.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

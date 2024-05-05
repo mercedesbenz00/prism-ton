@@ -47,13 +47,14 @@ And `yarn test` runs all those tests in succession.
 The workflow looks like this:
 
 1. Add changes to the grammar
-2. Add/update tests
-3. Execute and modify tests until they pass :)
-4. Commit & push
-5. Make PRs to:
+2. See how it works by opening the `.github/submodule-prism/test.html` file in the browser
+3. Add/update tests
+4. Execute and modify tests until they pass :)
+5. Commit & push
+6. Make PRs to:
   * ton-community/ton-docs
-  * tact-lang/tact-docs
   * TelegramMessenger/libprisma
+  * prismjs/prism
 
 ## TODO
 

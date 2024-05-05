@@ -1,0 +1,208 @@
+extends fun c(self: SomeMessage, ): Int {
+    let a: map<Int, Int> = null;
+    let b: Int = 10;
+
+    {}
+    {
+        let c: Int = 20;
+        c = 15;
+    }
+
+    self.description = "Tact is awesome!";
+    a.asCell()!!.toString();
+    b += 32;
+
+    if (true) {}
+    if (false) {}
+    else {}
+
+    if (false) {}
+    else if (true) {}
+
+    while (false) {}
+
+    repeat (5) {}
+
+    do {}
+    until (false);
+
+    try {}
+    try {} catch (e) {}
+
+    foreach (k, v in a) {}
+
+    0;
+    return 0;
+}
+
+----------------------------------------------------
+
+[
+	["keyword", "extends"],
+	["keyword", "fun"],
+	["function", "c"],
+	["punctuation", "("],
+	["keyword", "self"],
+	["punctuation", ":"],
+	["class-name", "SomeMessage"],
+	["punctuation", ","],
+	["punctuation", ")"],
+	["punctuation", ":"],
+	["builtin", "Int"],
+	["punctuation", "{"],
+
+	["keyword", "let"],
+	" a",
+	["punctuation", ":"],
+	["generics", [
+		["builtin", "map"],
+		["punctuation", "<"],
+		["builtin", "Int"],
+		["punctuation", ","],
+		["builtin", "Int"],
+		["punctuation", ">"]
+	]],
+	["operator", "="],
+	["constant", "null"],
+	["punctuation", ";"],
+
+	["keyword", "let"],
+	" b",
+	["punctuation", ":"],
+	["builtin", "Int"],
+	["operator", "="],
+	["number", "10"],
+	["punctuation", ";"],
+
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["punctuation", "{"],
+
+	["keyword", "let"],
+	" c",
+	["punctuation", ":"],
+	["builtin", "Int"],
+	["operator", "="],
+	["number", "20"],
+	["punctuation", ";"],
+
+	"\r\n        c ",
+	["operator", "="],
+	["number", "15"],
+	["punctuation", ";"],
+
+	["punctuation", "}"],
+
+	["keyword", "self"],
+	["punctuation", "."],
+	"description ",
+	["operator", "="],
+	["string-literal", [
+		["string", "\"Tact is awesome!\""]
+	]],
+	["punctuation", ";"],
+
+	"\r\n    a",
+	["punctuation", "."],
+	["function", "asCell"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["operator", "!!"],
+	["punctuation", "."],
+	["function", "toString"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["punctuation", ";"],
+
+	"\r\n    b ",
+	["operator", "+="],
+	["number", "32"],
+	["punctuation", ";"],
+
+	["keyword", "if"],
+	["punctuation", "("],
+	["boolean", "true"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "if"],
+	["punctuation", "("],
+	["boolean", "false"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "else"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "if"],
+	["punctuation", "("],
+	["boolean", "false"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "else"],
+	["keyword", "if"],
+	["punctuation", "("],
+	["boolean", "true"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "while"],
+	["punctuation", "("],
+	["boolean", "false"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "repeat"],
+	["punctuation", "("],
+	["number", "5"],
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "do"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "until"],
+	["punctuation", "("],
+	["boolean", "false"],
+	["punctuation", ")"],
+	["punctuation", ";"],
+
+	["keyword", "try"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "try"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+	["keyword", "catch"],
+	["punctuation", "("],
+	"e",
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["keyword", "foreach"],
+	["punctuation", "("],
+	"k",
+	["punctuation", ","],
+	" v ",
+	["keyword", "in"],
+	" a",
+	["punctuation", ")"],
+	["punctuation", "{"],
+	["punctuation", "}"],
+
+	["number", "0"], ["punctuation", ";"],
+	["keyword", "return"], ["number", "0"], ["punctuation", ";"],
+	["punctuation", "}"]
+]
