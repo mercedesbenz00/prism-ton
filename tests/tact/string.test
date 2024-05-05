@@ -1,6 +1,10 @@
 ""
 "Address"
 "SomeContractName"
+"\\ \" \n \r \t \v \b \f"
+"\x00 \xFF"
+"\u0000 \uFFFF"
+"\u{0} \u{FFFFFF}"
 
 ----------------------------------------------------
 
@@ -8,13 +12,51 @@
 	["string-literal", [
 		["string", "\"\""]
 	]],
-
 	["string-literal", [
 		["string", "\"Address\""]
 	]],
-
 	["string-literal", [
 		["string", "\"SomeContractName\""]
+	]],
+	["string-literal", [
+		["string", "\""],
+		["regex", "\\\\"],
+		["string", " "],
+		["regex", "\\\""],
+		["string", " "],
+		["regex", "\\n"],
+		["string", " "],
+		["regex", "\\r"],
+		["string", " "],
+		["regex", "\\t"],
+		["string", " "],
+		["regex", "\\v"],
+		["string", " "],
+		["regex", "\\b"],
+		["string", " "],
+		["regex", "\\f"],
+		["string", "\""]
+	]],
+	["string-literal", [
+		["string", "\""],
+		["regex", "\\x00"],
+		["string", " "],
+		["regex", "\\xFF"],
+		["string", "\""]
+	]],
+	["string-literal", [
+		["string", "\""],
+		["regex", "\\u0000"],
+		["string", " "],
+		["regex", "\\uFFFF"],
+		["string", "\""]
+	]],
+	["string-literal", [
+		["string", "\""],
+		["regex", "\\u{0}"],
+		["string", " "],
+		["regex", "\\u{FFFFFF}"],
+		["string", "\""]
 	]]
 ]
 
