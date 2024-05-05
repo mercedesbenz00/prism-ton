@@ -56,6 +56,9 @@ The workflow looks like this:
   * TelegramMessenger/libprisma
   * prismjs/prism
 
+Prism.js docs: https://prismjs.com/extending.html
+Awesome RegExp visualization tool: https://regex101.com
+
 ## TODO
 
 * [ ] Github Actions checks akin to ones in prismjs/prism
