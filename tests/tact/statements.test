@@ -6,6 +6,7 @@ extends fun c(self: SomeMessage, ): Int {
     {
         let c: Int = 20;
         c = 15;
+		_ = 20;
     }
 
     self.description = "Tact is awesome!";
@@ -52,7 +53,7 @@ extends fun c(self: SomeMessage, ): Int {
 	["punctuation", "{"],
 
 	["keyword", "let"],
-	" a",
+	["variable", "a"],
 	["punctuation", ":"],
 	["generics", [
 		["builtin", "map"],
@@ -67,7 +68,7 @@ extends fun c(self: SomeMessage, ): Int {
 	["punctuation", ";"],
 
 	["keyword", "let"],
-	" b",
+	["variable", "b"],
 	["punctuation", ":"],
 	["builtin", "Int"],
 	["operator", "="],
@@ -80,30 +81,35 @@ extends fun c(self: SomeMessage, ): Int {
 	["punctuation", "{"],
 
 	["keyword", "let"],
-	" c",
+	["variable", "c"],
 	["punctuation", ":"],
 	["builtin", "Int"],
 	["operator", "="],
 	["number", "20"],
 	["punctuation", ";"],
 
-	"\r\n        c ",
+	["variable", "c"],
 	["operator", "="],
 	["number", "15"],
+	["punctuation", ";"],
+
+	["comment", "_"],
+	["operator", "="],
+	["number", "20"],
 	["punctuation", ";"],
 
 	["punctuation", "}"],
 
 	["keyword", "self"],
 	["punctuation", "."],
-	"description ",
+	["variable", "description"],
 	["operator", "="],
 	["string-literal", [
 		["string", "\"Tact is awesome!\""]
 	]],
 	["punctuation", ";"],
 
-	"\r\n    a",
+	["variable", "a"],
 	["punctuation", "."],
 	["function", "asCell"],
 	["punctuation", "("],
@@ -115,7 +121,7 @@ extends fun c(self: SomeMessage, ): Int {
 	["punctuation", ")"],
 	["punctuation", ";"],
 
-	"\r\n    b ",
+	["variable", "b"],
 	["operator", "+="],
 	["number", "32"],
 	["punctuation", ";"],
@@ -186,18 +192,18 @@ extends fun c(self: SomeMessage, ): Int {
 	["punctuation", "}"],
 	["keyword", "catch"],
 	["punctuation", "("],
-	"e",
+	["variable", "e"],
 	["punctuation", ")"],
 	["punctuation", "{"],
 	["punctuation", "}"],
 
 	["keyword", "foreach"],
 	["punctuation", "("],
-	"k",
+	["variable", "k"],
 	["punctuation", ","],
-	" v ",
+	["variable", "v"],
 	["keyword", "in"],
-	" a",
+	["variable", "a"],
 	["punctuation", ")"],
 	["punctuation", "{"],
 	["punctuation", "}"],

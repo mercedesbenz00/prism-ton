@@ -18,7 +18,7 @@
         greedy: true,
       },
       { // reserved function names
-        pattern: /\b(?:bounced|external|init|receive)\b/
+        pattern: /\b(?:bounced|external|init|receive)\b(?=\()/
       },
     ],
 
@@ -100,11 +100,19 @@
         pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
         lookbehind: true,
         greedy: true,
+      },
+      {
+        // unused variable identifier
+        pattern: /\b_\b/
       }
     ],
 
     'operator': {
-      'pattern': /![!=]?|[+\-*/%=]=?|[<>]=|<<?|>>?|\|\|?|&&?|\^/,
+      'pattern': /![!=]?|[+\-*/%=]=?|[<>]=|<<?|>>?|~|\|[\|=]?|&[&=]?|\^=?/,
+    },
+
+    'variable': {
+      'pattern': /\b[a-zA-Z_]\w*\b/,
     },
 
   };
